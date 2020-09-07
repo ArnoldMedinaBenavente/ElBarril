@@ -6,7 +6,7 @@
   .firstPart{
     width: 100%;
     height: 400px;
-    background-color: lightgrey;
+    
     float: center;
 
 
@@ -14,7 +14,7 @@
   .itemSlider{
    padding: 5%;
    height: 400px;
-   width: 100px;
+   width: 100%;
      background-size: cover;
       position: relative;    /* para poder posicionar el texto de forma absoluta */
   display: inline-block; 
@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="itemSlider border">
-    <img src="{{asset('img/slider/silla.jpg')}}">
+    <img src="{{asset('img/slider/tablonpng.png')}}">
   </div>
   <div class="itemSlider border">
     <img src="{{asset('img/slider/tablonpng.png')}}">
@@ -51,7 +51,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
   $('.slider').slick({
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
   centerMode: true,

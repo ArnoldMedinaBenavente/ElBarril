@@ -79,6 +79,15 @@
 
         <main class="py-4">
             @yield('content')
+            
+            @if(Session::has('message'))
+        <div class="alert alert-{{ Session::get('alert-class') }} alert-dismissible fade show" role="alert" style="width:350px; position:absolute; bottom:0; right:15px; z-index:99999999;">
+            {!! Session::get('message') !!}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        @endif
         </main>
     </div>
 </body>

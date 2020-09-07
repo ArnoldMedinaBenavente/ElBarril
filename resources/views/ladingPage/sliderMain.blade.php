@@ -20,6 +20,7 @@
 								<th>Contenido Visual</th>
 								<th>Titulo</th>
 								<th>Contenido</th>
+								<th>Tipo</th>
 								<th>Fecha</th>
 								<th>Acciones</th>
 							</tr>
@@ -29,7 +30,7 @@
 							<tr>
 								<td>{{$s->path}}</td>
 								<td>{{$s->title}}</td>
-								<td>{{$s->contet}}</td>
+								<td>{{$s->content}}</td>
 								<td>{{$s->created_at}}</td>
 								<td>Root</td>
 								<td>
@@ -57,7 +58,7 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Nuevo</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Nuevo Contenido </h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -68,7 +69,14 @@
 					<div class="form-group">
 						<label for="contentVisual">Contvenido Visual</label>
 						<input type="file" class="form-control" id="contentVisual" name="contentVisual" >
-					
+					</div>
+					<div class="form-group">
+						<label for="contentVisual">Tipo de contenido</label>
+					   <select name="typeContent" class="form-control">
+					   	<option value="imagen">Imagen</option>
+					   	<option value="video">Video</option>
+					   	<option value="Sin Contenido Visual">Sin Contenido Visual</option>
+					   </select>
 					</div>
 					<div class="form-group">
 						<label for="title">Titulo</label>

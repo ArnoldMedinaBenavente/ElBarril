@@ -56,7 +56,7 @@ return [
         ],
          'sliderMain' => [
             'driver' => 'local',
-            'root' => public_path('sliderMain'),
+            'root' => public_path('img/slider'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
